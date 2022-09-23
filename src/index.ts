@@ -19,7 +19,7 @@ const BOARD_FOOT = 144
  * @param {number} height Height of the wood
  * @returns {number} length Length of the wood
  */
-function BoardLength (width: number, height: number): number {
+function BoardLength(width: number, height: number): number {
   const length = BOARD_FOOT / (width * height)
   return length
 }
