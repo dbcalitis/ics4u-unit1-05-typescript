@@ -52,3 +52,5 @@ if (isNaN(userWidthFloat)) {
     )
   }
 }
+
+console.log('\nDone.')
