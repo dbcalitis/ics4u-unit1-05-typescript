@@ -1,25 +1,49 @@
 {
-  "env": {
-    "browser": true,
 
-    "es2021": true
-  },
+    "env": {
 
-  "extends": ["standard-with-typescript", "plugin:jsdoc/recommended"],
+        "browser": true,
 
-  "parser": "@typescript-eslint/parser",
+        "es2021": true
 
-  "overrides": [],
+    },
 
-  "parserOptions": {
-    "project": "tsconfig.json",
+    "extends": [
 
-    "ecmaVersion": "latest",
+        "standard-with-typescript",
 
-    "sourceType": "module"
-  },
+        "plugin:jsdoc/recommended"
 
-  "plugins": ["@typescript-eslint"],
+        ], 
 
-  "rules": {}
+    "parser": "@typescript-eslint/parser",
+
+    "overrides": [
+
+    ],
+
+    "parserOptions": {
+
+        "project": "tsconfig.json",
+
+        "ecmaVersion": "latest",
+
+        "sourceType": "module"
+
+    },
+
+    "plugins": [
+
+        "@typescript-eslint"
+
+    ],
+
+    "rules": {
+
+      "space-before-function-paren": ["error", "never"],
+
+      "@typescript-eslint/space-before-function-paren": ["error", "never"]
+
+    }
+
 }
