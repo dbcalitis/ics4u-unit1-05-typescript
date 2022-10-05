@@ -11,15 +11,13 @@ import promptSync from 'prompt-sync'
 
 const prompt = promptSync()
 
-// Constants
-const BOARD_FOOT = 144
-
 /**
  * @param {number} width Width of the wood
  * @param {number} height Height of the wood
  * @returns {number} length Length of the wood
  */
 function BoardLength(width: number, height: number): number {
+  const BOARD_FOOT = 144
   const length = BOARD_FOOT / (width * height)
   return length
 }
